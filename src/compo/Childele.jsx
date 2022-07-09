@@ -17,7 +17,7 @@ const Childele = (props) => {
             style={{ border: "none" }}
             className="input is-normal "
             value={props.work}
-            onChange={(e) => props.fun(e, props.id)}
+            onChange={(e) => props.fun(e, props.ind)}
           ></input>
         </div>
         <div className="buttons is-pulled-right">
@@ -34,7 +34,7 @@ const Childele = (props) => {
             <button
               className="button is-danger m-1 is-small is-responsive is-pulled-right"
               onClick={() => {
-                console.log("hello");
+                props.del(props.ind);
               }}
             >
               {" "}
